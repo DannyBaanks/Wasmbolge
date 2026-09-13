@@ -6,6 +6,8 @@ const BLOCK: usize = 243;
 const POW9: u32 = 19683;
 const ENC: &[u8] = b"5z]&gqtyfr$(we4{WP)H-Zn,[%\\3dL+Q;>U!pJS72FhOA1CB6v^=I_0/8|jsb9m<.TVac`uY*MK'X~xDl}REokN:#?G\"i@";
 
+pub mod unshackled19;
+
 fn crazy5(a: u32, b: u32) -> u32 {
     let table = [[1u32, 0, 0], [1, 0, 2], [2, 2, 1]];
     let mut aa = a;
