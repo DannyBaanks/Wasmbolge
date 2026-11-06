@@ -1,9 +1,12 @@
-# Wasmbolge
+# Wasmbolge v2.0 — WebAssembly Caller-Owned Buffer Engine (Classic & Unshackled 3^19)
 
-Experimental, dependency-free Rust core for a future WebAssembly Malbolge
-backend. The exported ABI is `wasmbolge_run`: caller-owned linear-memory
-buffers in, raw output plus compact JSON report out. `wasmbolge.mjs` provides
-a small browser/Node host wrapper.
+[![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/DannyBaanks/Wasmbolge)
+[![Wasm](https://img.shields.io/badge/target-wasm32--unknown--unknown-blueviolet.svg)](https://webassembly.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-22%2B%20Verified-brightgreen.svg)](https://nodejs.org)
+
+Dependency-free Rust core compiled to WebAssembly for high-performance browser and Node.js execution of Malbolge. The exported ABI is `wasmbolge_run` (Classic) and `wasmbolge_run_unshackled19` (Unshackled 3^19): caller-owned linear-memory buffers in, raw output plus compact JSON report out. `wasmbolge.mjs` provides the ES module host wrapper.
+
+Member of the **v2.0 Malbolge Ecosystem Fleet**.
 
 Current scope: Classic execution core, native Rust tests, and a verified
 `wasm32-unknown-unknown` release build. Browser/Node execution remains
